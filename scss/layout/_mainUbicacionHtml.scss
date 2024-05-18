@@ -1,0 +1,25 @@
+.contenidoMenuUbicacion{
+    @include grid(45% 45%,0,10%,0);
+    .ubicacionMapa{
+        margin-left: 10%;
+        .hUbicacion{
+            @include textSans(0,0,0,0,700,normal,30px);
+            padding-top: 5%;
+        }
+    }
+    .horariosAtencion{
+        margin-right: 20%;
+        .horarioTitulo{
+            @include textSans(0,0,0,0,700,normal,30px);
+            padding-top: 5%;
+        }
+        table{
+            tr{
+                td{
+                    @include textSans(0,0,0,0,400,normal,15px);
+                    background-color: map-get($color , color1 );
+                }
+            }
+        }
+    }
+}

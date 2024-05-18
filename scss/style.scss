@@ -1,0 +1,27 @@
+/*Importacion de Utilities*/
+
+@import "./utilities/_variables";
+@import "./utilities/_maps";
+@import "./utilities/_mixins";
+
+/*Importacion de Base*/
+@import "./base/reset";
+
+/*Importacion de Layout*/
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/mainIndexHtml";
+@import "./layout/mainMenuHtml";
+@import "./layout/mainUbicacionHtml";
+@import "./layout/mainReseniasHtml";
+@import "./layout/mainAcercaDeHtml";
+
+
+/*Importacion de Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*Importacion de Mediaquerys*/
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";

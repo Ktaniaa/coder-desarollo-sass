@@ -1,0 +1,22 @@
+.cuerpoInicio{
+    @include grid(50% 50%,0,0,center);
+    .hInicio{
+        padding: 10%;
+        h1{
+            @include textRoboto(0,0,0,1rem,300,none,30px);
+        }
+        h2{
+            @include textSans(0,0,0,1rem,1000,normal,35px);
+        }
+        h3{
+            @include textSans(0,0,0,1rem,300,normal,30px);
+        }
+    }
+    .hImagen{
+        text-align: center;
+        #imgSand{
+            padding: 10%;
+            height: 37rem;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.triplesMenu{
+    h2{
+        @include textSans(0,0,0,0,3000,normal,1.875rem);
+        margin-left: 2.5%;
+    }
+    .triplesComunes{
+        @include grid(1fr 1fr 1fr 1fr,0,1rem,0);
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 5rem;
+    }
+    .triplesEspeciales{
+        @include grid(1fr 1fr 1fr 1fr,0,1rem,0);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}

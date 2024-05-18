@@ -1,0 +1,22 @@
+header{
+    background-color: map-get($color, color2);
+    .navegacionHamburguesa{
+        display: none;
+    }
+    .navegacionFlexbox{
+        ul{
+            @include grid (20% 16% 16% 16% 16% 16%,0,0,center);
+            li{
+                display: inline;
+                padding: 2rem;
+                a{
+                    text-decoration: none;
+                    font-family: "Roboto",sans-serif;
+                    font-weight: 700;
+                    font-style: normal;
+                    color :map-get($color,color3);
+                }
+            }
+        }
+    }
+}

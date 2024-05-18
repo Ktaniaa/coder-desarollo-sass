@@ -1,0 +1,21 @@
+.usuarioResenia{
+    width: 50%;
+    margin: auto;
+    padding: .9375rem;
+    .imagenTextoResenia{
+        @include flex(inline,0,0);
+        img{
+            margin-right: 1rem;
+        }
+    }
+    .imagenSobreH2{
+        display: none;
+    }
+    .reseniasFecha{
+        @include flex(0,0,0);
+        @include textSans(0,0,0,0,300,normal,1rem);
+    }
+    .reseniasTexto{
+        @include flex(0,0,0);
+    }
+}

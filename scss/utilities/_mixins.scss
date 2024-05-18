@@ -1,0 +1,38 @@
+@mixin grid($columnas,$area,$gap,$alineacion){
+    display: grid;
+    grid-template-columns:$columnas;
+    grid-template-areas:$area;
+    grid-column-gap:$gap;
+    align-items:$alineacion;
+}
+
+@mixin flex($direccion,$posicion,$textposicion){
+    display: flex;
+    flex-direction: $direccion;
+    align-items: $posicion;
+    text-align: $textposicion;
+}
+
+@mixin textSans($disp,$justificacion,$align,$pad,$weight,$style,$tamanio){
+
+    display: $disp;
+    justify-content: $justificacion;
+    text-align: $align;
+    padding: $pad;
+    font-family: "Open Sans",sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $tamanio;
+}
+
+@mixin textRoboto($disp,$justificacion,$align,$pad,$weight,$style,$tamanio){
+
+    display: $disp;
+    justify-content: $justificacion;
+    text-align: $align;
+    padding: $pad;
+    font-family: "Roboto",sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+    font-size: $tamanio;
+}
