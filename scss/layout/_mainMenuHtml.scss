@@ -1,17 +1,38 @@
 .triplesMenu{
+    margin-left: 10%;
+    margin-right: 10%;
     h2{
-        @include textSans(0,0,0,0,3000,normal,1.875rem);
+        @include textSans(0,0,0,0,3000,normal,1.6rem);
         margin-left: 2.5%;
+        @include tablet{
+            @include textSans(0,0,0,0,1800,normal,1.5rem);
+            text-align: center;
+        }
     }
     .triplesComunes{
         @include grid(1fr 1fr 1fr 1fr,0,1rem,0);
         margin-left: 10%;
         margin-right: 10%;
         padding-bottom: 5rem;
+        @include tablet{
+            display: block;
+            @include grid(1fr 1fr,0,1rem,0);
+            margin-left: 10%;
+            margin-right: 10%;
+            padding-bottom: 5rem;
+        }
+        div{
+            padding-bottom: 3rem;
+            margin: auto;
+            img{
+                height: 6rem;
+                @include mobile{
+                    height: 4rem;
+                }
+            }
+        }
     }
     .triplesEspeciales{
-        @include grid(1fr 1fr 1fr 1fr,0,1rem,0);
-        margin-left: 10%;
-        margin-right: 10%;
+        @extend .triplesComunes;
     }
 }

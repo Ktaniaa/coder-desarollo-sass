@@ -1,3 +1,45 @@
 .acercaDe{
+    @include desktop{
+        display: block;
+    }
     @include grid(45% 45%,0,10%,0);
+    .acercaDeNosotrosSec{
+        margin-left: 10%;
+        @include desktop{
+            @include grid(100%,0,0,0);
+            text-align: center;
+            margin-right: 10%;
+        }
+        .titAcerca{
+            @include textSans(0,0,0,0,700,normal,30px);
+            padding-top: 5%;
+        }
+    }
+    .serviciosTexto{
+        margin-right: 10%;
+        @include desktop{
+            @include grid(100%,0,0,0);
+            text-align: center;
+            margin-left: 10%;  
+        }
+        .titServicios{
+            @include textSans(0,0,0,0,700,normal,30px);
+            padding-top: 5%;
+        }
+        ol{
+            li{
+                text-align: center;
+                padding-bottom: 2rem;
+                p{
+                    text-align: left;
+                }
+                img{
+                    height: 10rem;
+                    @include mobile{
+                        height: 8rem;
+                    }
+                }
+            }
+        }
+    }
 }

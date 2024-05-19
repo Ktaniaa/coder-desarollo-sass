@@ -41,34 +41,59 @@ footer {
     grid-template-areas: 0;
     grid-column-gap: 0;
     align-items: 0; }
-    footer .menuNavegacionFooter ul li a #imgIg {
+    footer .menuNavegacionFooter ul li a #imgIg, footer .menuNavegacionFooter ul li a #imgFb, footer .menuNavegacionFooter ul li a #imgWsp {
       width: 2.5rem;
       height: 2.5rem; }
-    footer .menuNavegacionFooter ul li a #imgFb {
-      width: 2.5rem;
-      height: 2.5rem; }
-    footer .menuNavegacionFooter ul li a #imgWsp {
-      width: 2.5rem;
-      height: 2.5rem; }
+      @media screen and (max-width: 425px) {
+        footer .menuNavegacionFooter ul li a #imgIg, footer .menuNavegacionFooter ul li a #imgFb, footer .menuNavegacionFooter ul li a #imgWsp {
+          height: 30px;
+          width: 30px; } }
 
 header {
   background-color: #F27B35; }
   header .navegacionHamburguesa {
-    display: none; }
-  header .navegacionFlexbox ul, header footer .menuNavegacionFooter ul li a ul, footer .menuNavegacionFooter ul li header a ul {
+    display: none;
+    padding-top: 1rem; }
+    @media screen and (max-width: 1024px) {
+      header .navegacionHamburguesa {
+        display: block; } }
+    header .navegacionHamburguesa ul {
+      list-style: none; }
+      header .navegacionHamburguesa ul li a {
+        display: 0;
+        justify-content: 0;
+        text-align: 0;
+        padding: 0;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #262626;
+        padding-top: 2rem; }
+  @media screen and (max-width: 1024px) {
+    header .navegacionFlexbox {
+      display: none; } }
+  header .navegacionFlexbox ul {
     display: grid;
     grid-template-columns: 20% 16% 16% 16% 16% 16%;
     grid-template-areas: 0;
     grid-column-gap: 0;
-    align-items: center; }
-    header .navegacionFlexbox ul li, header footer .menuNavegacionFooter ul li a ul li, footer .menuNavegacionFooter ul li header a ul li {
+    align-items: center;
+    text-align: center; }
+    header .navegacionFlexbox ul li {
       display: inline;
       padding: 2rem; }
-      header .navegacionFlexbox ul li a, header footer .menuNavegacionFooter ul li a ul li a, footer .menuNavegacionFooter ul li header a ul li a {
-        text-decoration: none;
+      header .navegacionFlexbox ul li a {
+        display: 0;
+        justify-content: 0;
+        text-align: 0;
+        padding: 0;
         font-family: "Roboto",sans-serif;
-        font-weight: 700;
+        font-weight: 500;
         font-style: normal;
+        font-size: 1.2rem;
+        text-decoration: none;
         color: #262626; }
 
 .cuerpoInicio {
@@ -77,6 +102,9 @@ header {
   grid-template-areas: 0;
   grid-column-gap: 0;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .cuerpoInicio {
+      display: block; } }
   .cuerpoInicio .hInicio {
     padding: 10%; }
     .cuerpoInicio .hInicio h1 {
@@ -106,41 +134,82 @@ header {
       font-weight: 300;
       font-style: normal;
       font-size: 30px; }
+    @media screen and (max-width: 768px) {
+      .cuerpoInicio .hInicio {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0; } }
   .cuerpoInicio .hImagen {
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .cuerpoInicio .hImagen {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0;
+        place-items: center; } }
     .cuerpoInicio .hImagen #imgSand {
       padding: 10%;
       height: 37rem; }
+      @media screen and (max-width: 1024px) {
+        .cuerpoInicio .hImagen #imgSand {
+          height: 30rem; } }
 
-.triplesMenu h2 {
-  display: 0;
-  justify-content: 0;
-  text-align: 0;
-  padding: 0;
-  font-family: "Open Sans",sans-serif;
-  font-weight: 3000;
-  font-style: normal;
-  font-size: 1.875rem;
-  margin-left: 2.5%; }
-
-.triplesMenu .triplesComunes {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 0;
-  grid-column-gap: 1rem;
-  align-items: 0;
-  margin-left: 10%;
-  margin-right: 10%;
-  padding-bottom: 5rem; }
-
-.triplesMenu .triplesEspeciales {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 0;
-  grid-column-gap: 1rem;
-  align-items: 0;
+.triplesMenu {
   margin-left: 10%;
   margin-right: 10%; }
+  .triplesMenu h2 {
+    display: 0;
+    justify-content: 0;
+    text-align: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    font-weight: 3000;
+    font-style: normal;
+    font-size: 1.6rem;
+    margin-left: 2.5%; }
+    @media screen and (max-width: 768px) {
+      .triplesMenu h2 {
+        display: 0;
+        justify-content: 0;
+        text-align: 0;
+        padding: 0;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 1800;
+        font-style: normal;
+        font-size: 1.5rem;
+        text-align: center; } }
+  .triplesMenu .triplesComunes, .triplesMenu .triplesEspeciales {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 0;
+    grid-column-gap: 1rem;
+    align-items: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 5rem; }
+    @media screen and (max-width: 768px) {
+      .triplesMenu .triplesComunes, .triplesMenu .triplesEspeciales {
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 0;
+        grid-column-gap: 1rem;
+        align-items: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 5rem; } }
+    .triplesMenu .triplesComunes div, .triplesMenu .triplesEspeciales div {
+      padding-bottom: 3rem;
+      margin: auto; }
+      .triplesMenu .triplesComunes div img, .triplesMenu .triplesEspeciales div img {
+        height: 6rem; }
+        @media screen and (max-width: 425px) {
+          .triplesMenu .triplesComunes div img, .triplesMenu .triplesEspeciales div img {
+            height: 4rem; } }
 
 .contenidoMenuUbicacion {
   display: grid;
@@ -148,8 +217,19 @@ header {
   grid-template-areas: 0;
   grid-column-gap: 10%;
   align-items: 0; }
+  @media screen and (max-width: 768px) {
+    .contenidoMenuUbicacion {
+      display: block; } }
   .contenidoMenuUbicacion .ubicacionMapa {
     margin-left: 10%; }
+    @media screen and (max-width: 768px) {
+      .contenidoMenuUbicacion .ubicacionMapa {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0;
+        margin-right: 10%; } }
     .contenidoMenuUbicacion .ubicacionMapa .hUbicacion {
       display: 0;
       justify-content: 0;
@@ -160,8 +240,21 @@ header {
       font-style: normal;
       font-size: 30px;
       padding-top: 5%; }
+    @media screen and (max-width: 768px) {
+      .contenidoMenuUbicacion .ubicacionMapa #mapaUbi {
+        height: 30rem; } }
   .contenidoMenuUbicacion .horariosAtencion {
     margin-right: 20%; }
+    @media screen and (max-width: 768px) {
+      .contenidoMenuUbicacion .horariosAtencion {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 10%; } }
     .contenidoMenuUbicacion .horariosAtencion .horarioTitulo {
       display: 0;
       justify-content: 0;
@@ -192,10 +285,19 @@ header {
     flex-direction: inline;
     align-items: 0;
     text-align: 0; }
+    @media screen and (max-width: 768px) {
+      .usuarioResenia .imagenTextoResenia {
+        display: none; } }
     .usuarioResenia .imagenTextoResenia img {
       margin-right: 1rem; }
   .usuarioResenia .imagenSobreH2 {
-    display: none; }
+    display: none;
+    text-align: center; }
+    @media screen and (max-width: 768px) {
+      .usuarioResenia .imagenSobreH2 {
+        display: block; } }
+    .usuarioResenia .imagenSobreH2 img {
+      margin-bottom: 1rem; }
   .usuarioResenia .reseniasFecha {
     display: flex;
     flex-direction: 0;
@@ -209,11 +311,17 @@ header {
     font-weight: 300;
     font-style: normal;
     font-size: 1rem; }
+    @media screen and (max-width: 768px) {
+      .usuarioResenia .reseniasFecha {
+        text-align: center; } }
   .usuarioResenia .reseniasTexto {
     display: flex;
     flex-direction: 0;
     align-items: 0;
     text-align: 0; }
+    @media screen and (max-width: 768px) {
+      .usuarioResenia .reseniasTexto {
+        text-align: center; } }
 
 .acercaDe {
   display: grid;
@@ -221,6 +329,70 @@ header {
   grid-template-areas: 0;
   grid-column-gap: 10%;
   align-items: 0; }
+  @media screen and (max-width: 1024px) {
+    .acercaDe {
+      display: block; } }
+  .acercaDe .acercaDeNosotrosSec {
+    margin-left: 10%; }
+    @media screen and (max-width: 1024px) {
+      .acercaDe .acercaDeNosotrosSec {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0;
+        text-align: center;
+        margin-right: 10%; } }
+    .acercaDe .acercaDeNosotrosSec .titAcerca {
+      display: 0;
+      justify-content: 0;
+      text-align: 0;
+      padding: 0;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      padding-top: 5%; }
+  .acercaDe .serviciosTexto {
+    margin-right: 10%; }
+    @media screen and (max-width: 1024px) {
+      .acercaDe .serviciosTexto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 0;
+        grid-column-gap: 0;
+        align-items: 0;
+        text-align: center;
+        margin-left: 10%; } }
+    .acercaDe .serviciosTexto .titServicios {
+      display: 0;
+      justify-content: 0;
+      text-align: 0;
+      padding: 0;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      padding-top: 5%; }
+    .acercaDe .serviciosTexto ol li {
+      text-align: center;
+      padding-bottom: 2rem; }
+      .acercaDe .serviciosTexto ol li p {
+        text-align: left; }
+      .acercaDe .serviciosTexto ol li img {
+        height: 10rem; }
+        @media screen and (max-width: 425px) {
+          .acercaDe .serviciosTexto ol li img {
+            height: 8rem; } }
+
+/*Importacion de Animacion*/
+.scale-up-center {
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both; }
+
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1); } }
 
 /*Importacion de Fuentes*/
-/*Importacion de Mediaquerrys*/

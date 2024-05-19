@@ -2,18 +2,33 @@ header{
     background-color: map-get($color, color2);
     .navegacionHamburguesa{
         display: none;
+        padding-top: 1rem;
+        @include desktop {
+            display: block;}
+        ul{
+            list-style: none;
+            li{
+                a{
+                    @include textSans(0,0,0,0,700,normal,1.25rem);
+                    text-decoration: none;
+                    color: #262626;
+                    padding-top: 2rem;
+                }
+            }
+        }
     }
     .navegacionFlexbox{
+        @include desktop{
+            display: none;}
         ul{
             @include grid (20% 16% 16% 16% 16% 16%,0,0,center);
+            text-align: center;
             li{
                 display: inline;
                 padding: 2rem;
                 a{
+                    @include textRoboto(0,0,0,0,500,normal,1.2rem);
                     text-decoration: none;
-                    font-family: "Roboto",sans-serif;
-                    font-weight: 700;
-                    font-style: normal;
                     color :map-get($color,color3);
                 }
             }

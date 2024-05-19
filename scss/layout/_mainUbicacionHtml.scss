@@ -1,14 +1,32 @@
 .contenidoMenuUbicacion{
     @include grid(45% 45%,0,10%,0);
+    @include tablet{
+        display: block;
+    }
     .ubicacionMapa{
         margin-left: 10%;
+        @include tablet{
+            @include grid(100%,0,0,0);
+            margin-right: 10%;
+        }
         .hUbicacion{
             @include textSans(0,0,0,0,700,normal,30px);
             padding-top: 5%;
         }
+        #mapaUbi{
+            @include tablet{
+            height: 30rem;
+            }
+        }
     }
     .horariosAtencion{
         margin-right: 20%;
+        @include tablet{
+            @include grid(100%,0,0,0);
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+        }
         .horarioTitulo{
             @include textSans(0,0,0,0,700,normal,30px);
             padding-top: 5%;

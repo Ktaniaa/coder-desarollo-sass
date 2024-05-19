@@ -10,18 +10,19 @@ footer{
             @include grid (33% 33% 33%,0,0,0);
             li{
                 a{
-                    @extend .navegacionFlexbox;
                     #imgIg{
                         width: 2.5rem;
                         height: 2.5rem;
+                        @include mobile{
+                            height: 30px;
+                            width: 30px;
+                        }
                     }
                     #imgFb{
-                        width: 2.5rem;
-                        height: 2.5rem;
+                        @extend #imgIg;
                     }
                     #imgWsp{
-                        width: 2.5rem;
-                        height: 2.5rem;
+                        @extend #imgIg;
                     }
                 }
             }

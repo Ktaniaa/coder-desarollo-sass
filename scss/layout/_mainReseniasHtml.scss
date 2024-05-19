@@ -4,18 +4,34 @@
     padding: .9375rem;
     .imagenTextoResenia{
         @include flex(inline,0,0);
+        @include tablet{
+            display: none;
+        }
         img{
             margin-right: 1rem;
         }
     }
     .imagenSobreH2{
         display: none;
+        text-align: center;
+        @include tablet{
+            display: block;
+        }
+        img{
+            margin-bottom: 1rem;
+        }
     }
     .reseniasFecha{
         @include flex(0,0,0);
         @include textSans(0,0,0,0,300,normal,1rem);
+        @include tablet{
+            text-align: center;
+        }
     }
     .reseniasTexto{
         @include flex(0,0,0);
+        @include tablet{
+            text-align:center;
+        }
     }
 }

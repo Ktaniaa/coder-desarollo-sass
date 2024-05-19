@@ -36,3 +36,18 @@
     font-style: $style;
     font-size: $tamanio;
 }
+@mixin desktop {
+    @media screen and (max-width:1024px){ 
+        @content;
+    }
+}
+@mixin tablet {
+    @media screen and (max-width:768px){ 
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width:425px){ 
+        @content;
+    }
+}
