@@ -59,18 +59,20 @@ header {
         display: block; } }
     header .navegacionHamburguesa ul {
       list-style: none; }
-      header .navegacionHamburguesa ul li a {
-        display: 0;
-        justify-content: 0;
-        text-align: 0;
-        padding: 0;
-        font-family: "Open Sans",sans-serif;
-        font-weight: 700;
-        font-style: normal;
-        font-size: 1.25rem;
-        text-decoration: none;
-        color: #262626;
-        padding-top: 2rem; }
+      header .navegacionHamburguesa ul li {
+        padding-top: 1rem; }
+        header .navegacionHamburguesa ul li a {
+          display: 0;
+          justify-content: 0;
+          text-align: 0;
+          padding: 0;
+          font-family: "Open Sans",sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 1.25rem;
+          text-decoration: none;
+          color: #262626;
+          padding-top: 2rem; }
   @media screen and (max-width: 1024px) {
     header .navegacionFlexbox {
       display: none; } }
