@@ -44,10 +44,16 @@ footer {
     footer .menuNavegacionFooter ul li a #imgIg, footer .menuNavegacionFooter ul li a #imgFb, footer .menuNavegacionFooter ul li a #imgWsp {
       width: 2.5rem;
       height: 2.5rem; }
+      footer .menuNavegacionFooter ul li a #imgIg:hover, footer .menuNavegacionFooter ul li a #imgFb:hover, footer .menuNavegacionFooter ul li a #imgWsp:hover {
+        width: 2.8rem;
+        height: 2.8rem; }
       @media screen and (max-width: 425px) {
         footer .menuNavegacionFooter ul li a #imgIg, footer .menuNavegacionFooter ul li a #imgFb, footer .menuNavegacionFooter ul li a #imgWsp {
           height: 30px;
-          width: 30px; } }
+          width: 30px; }
+          footer .menuNavegacionFooter ul li a #imgIg:hover, footer .menuNavegacionFooter ul li a #imgFb:hover, footer .menuNavegacionFooter ul li a #imgWsp:hover {
+            width: 35px;
+            height: 35px; } }
 
 header {
   background-color: #F27B35; }
@@ -73,6 +79,8 @@ header {
           text-decoration: none;
           color: #262626;
           padding-top: 2rem; }
+          header .navegacionHamburguesa ul li a:hover {
+            font-size: 1.4rem; }
   @media screen and (max-width: 1024px) {
     header .navegacionFlexbox {
       display: none; } }
@@ -97,6 +105,8 @@ header {
         font-size: 1.2rem;
         text-decoration: none;
         color: #262626; }
+        header .navegacionFlexbox ul li a:hover {
+          font-size: 1.4rem; }
 
 .cuerpoInicio {
   display: grid;

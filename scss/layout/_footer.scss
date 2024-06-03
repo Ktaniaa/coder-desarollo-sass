@@ -13,9 +13,17 @@ footer{
                     #imgIg{
                         width: 2.5rem;
                         height: 2.5rem;
+                        &:hover{
+                            width: 2.8rem;
+                            height: 2.8rem;
+                        }
                         @include mobile{
                             height: 30px;
                             width: 30px;
+                            &:hover{
+                                width: 35px;
+                                height: 35px;
+                            }
                         }
                     }
                     #imgFb{
